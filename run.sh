@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "starting enviornment variable test"
+echo "this script will read the enviornment variable \"test.dot.var\" and \"testdotvar\""
+echo "the values for both vars are set to www.yahoo.com"
+echo ""
+echo "the expected output will be:"
+echo "test.dot.var: www.yahoo.com // testdotvar: www.yahoo.com"
+echo ""
+echo "actual output:"
+echo "test.dot.var: $(perl -e 'print $ENV{"test.dot.var"}') // testdotvar: $(perl -e 'print $ENV{"testdotvar"}')"
+echo ""
+echo "ending test"
