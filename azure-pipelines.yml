@@ -10,7 +10,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'joshfalgout/fargate:latest'
+  imageName: 'joshfalgout/fargate'
 
 steps:
 - task: CmdLine@2
@@ -35,4 +35,4 @@ steps:
   inputs:
     scanType: 'images'
     twistlockService: 'compute-console-connection'
-    artifact: 'joshfalgout/fargate:latest'
+    artifact: $(imageName)
