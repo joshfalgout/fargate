@@ -22,6 +22,7 @@ steps:
   displayName: Build an image
   inputs:
     repository: $(imageName)
+    tag: latest
     command: build
     Dockerfile: ./Dockerfile
 
@@ -30,4 +31,4 @@ steps:
   inputs:
     scanType: 'images'
     twistlockService: 'compute-console-connection'
-    artifact: $(imageName)
+    artifact: $(imageName):latest
