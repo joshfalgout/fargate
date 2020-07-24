@@ -34,5 +34,5 @@ steps:
 - task: prisma-cloud-compute-scan@2
   inputs:
     scanType: 'images'
-    twistlockService: 'compute-console-connection'
+    twistlockService: 'compute-console-connector'
     artifact: 'joshfalgout/fargate'
