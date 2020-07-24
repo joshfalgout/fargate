@@ -14,14 +14,9 @@ variables:
 
 steps:
 - task: CmdLine@2
-  displayName: ls
+  displayName: skip ssl
   inputs:
-    script: 'ls -ltrh'
-
-- task: CmdLine@2
-  displayName: pwd
-  inputs:
-    script: 'pwd'
+    script: 'echo insecure >> $HOME/.curlrc'
 
 - task: Docker@2
   displayName: Build an image
