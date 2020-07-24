@@ -1,9 +1,4 @@
 # Starter pipeline
-- task: prisma-cloud-compute-scan@2
-  inputs:
-    scanType: 'images'
-    twistlockService: 'compute-console-connection'
-    artifact: 'ubuntu:16.04'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -25,3 +20,9 @@ steps:
     command: build
     Dockerfile: app/Dockerfile
 
+
+- task: prisma-cloud-compute-scan@2
+  inputs:
+    scanType: 'images'
+    twistlockService: 'compute-console-connection'
+    artifact: 'ubuntu:16.04'
