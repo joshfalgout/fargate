@@ -21,7 +21,7 @@ steps:
 - task: CmdLine@2
   displayName: ls
   inputs:
-    script: 'ls -ltrh home/vsts/work/1/s/'
+    script: 'ls -ltrh home/vsts/work/1'
 
 - task: Docker@2
   displayName: Build an image
