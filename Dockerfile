@@ -1,4 +1,4 @@
-FROM ubuntu:16:04
+FROM ubuntu:16.04
 ENV test.dot.var=www.yahoo.com
 ENV testdotvar=www.yahoo.com
 COPY scripts/ scripts/
