@@ -23,7 +23,7 @@ steps:
   inputs:
     repository: $(imageName)
     command: build
-    Dockerfile: /Dockerfile
+    Dockerfile: Dockerfile
 
 
 - task: prisma-cloud-compute-scan@2
