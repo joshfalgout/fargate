@@ -10,7 +10,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  imageName: 'joshfalgout/fargate'
+  imageName: 'joshfalgout/fargate:latest'
 
 steps:
 - task: CmdLine@2
